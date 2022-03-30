@@ -2,10 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Friend = (props) => {
-    const { name, username } = props.friend;
+    const { name, username, id } = props.friend;
     const navigate = useNavigate();
     const handleButton = () => {
-        navigate('/friend/' + username);
+        navigate('/friend/' + id);
     }
     return (
         <div className='my-4 border-2 p-5'>
